@@ -13,8 +13,8 @@ def read_file(file_name,cell_range):
     if len (file_name) == 0:
         return None
     elif len(cell_range) == 0:
-        return None   
-    else :
+        return None  
+    elif file_name.endswith('.xlsx'):
         wb = openpyxl.load_workbook(file_name)    
         sheet=wb.active
         data = []
@@ -22,6 +22,6 @@ def read_file(file_name,cell_range):
             data.append(cell[0].value)
         return data
 
-#data = read_file('ram.xlsx',"")    
-#print(data)
+
+
 

@@ -54,4 +54,15 @@ def test_reading_all_cells():
     # compare
     assert exp_output == real_output
     
+## M114: creting test case for M113. Reading all cells from empty file. Return:empty list.      
+
+def test_read_all_cells_in_empty_file():
+    # setup
+    input_param_file_name = "empty.xlsx"
+    input_param_cell_range = "all"
+    exp_output = [[None]]
+    # call
+    real_output = read_file(input_param_file_name,input_param_cell_range)
+    # compare
+    assert exp_output == real_output
 
