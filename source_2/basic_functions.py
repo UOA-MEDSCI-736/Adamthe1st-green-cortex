@@ -29,11 +29,8 @@ def read_file(file_name,cell_range):
         else:
             for cell in sheet[cell_range]:  
                 data.append(cell[0].value)
-
         # return the cells 
         return data
 
-#data = read_file('ram.xlsx',"")    
-#print(data)
 
 
