@@ -20,7 +20,7 @@ Hello world! welcome to my humble repository. Using python, my project implement
 
 **BUILD REQUIREMENTS:**
 
-- The algoreithm used: Machine learning - Multi-class classification
+- Algoreithm: Machine learning - Multi-class classification
 - Programming language: python 3.5.2 | Anaconda 4.1.1 (64-bit).
 - Format of original data files: .xlsx
 - 3rd party/open source libraries: openpyxl
