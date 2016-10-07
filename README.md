@@ -6,19 +6,17 @@ Hello world! welcome to my humble repository. Using python, my project implement
 
 **FOLDERS:**
 
-.. code-block:: python
+- *project_raw_data:*
+   contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. 
 
-  - *project_raw_data:*
-    contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. 
+- *results:*
+  contains the results of the test cases made along the development of the project. The result files are in ".txt"           format.
 
-  - *results:*
-    contains the results of the test cases made along the development of the project. The result files are in ".txt"           format.
+- *source:*
+  contains the "basic_functions.py" file which contains the code of the software. The file "tests" contains contains the     "test_read_data.py" file that has code designed to test the functions from the "basic_functions.py" file.
 
-  - *source:*
-    contains the "basic_functions.py" file which contains the code of the software. The file "tests" contains contains the     "test_read_data.py" file that has code designed to test the functions from the "basic_functions.py" file.
-
-  - *Final assignment:* 
-    contains a written report about the project's background, description of the data, an outline of the code used to         create   the software. The report will provide a reference for potential reuse/reproducibility of the code generated.
+- *Final assignment:* 
+  contains a written report about the project's background, description of the data, an outline of the code used to         create   the software. The report will provide a reference for potential reuse/reproducibility of the code generated.
 
 **BUILD REQUIREMENTS:**
 
