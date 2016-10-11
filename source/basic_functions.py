@@ -1,7 +1,13 @@
 # python 3.5.2
 
+## DESCRIPTION: this project implements the "Multi-class classification-based algorithm"
+# to create a software which identifies the neuron cell type based on specific input cell characteristics. 
+
+
+
+
 #package name (lib)
-import openpyxl 
+import openpyxl # openpyxl allows python to open/read excel files.
 
 # fnction to read excel file and return a list of values in cell renage
 # input: file_name is a string representing name of xls file to read e.g. 'ram.xlsx'
@@ -13,8 +19,8 @@ def read_file(file_name,cell_range):
     if len (file_name) == 0:
         return None
     elif len(cell_range) == 0:
-        return None   
-    else :
+        return None  
+    else:
         wb = openpyxl.load_workbook(file_name)    
         sheet=wb.active
         # declaring a empty list to hold the cells
