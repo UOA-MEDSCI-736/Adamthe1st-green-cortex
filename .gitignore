@@ -1,3 +1,6 @@
+source/.cache/*
+source/.ipynb_checkpoints/*
+source/__pycache__/*
 .cache/*
 .ipynb_checkpoints/*
 
