@@ -66,3 +66,39 @@ def test_read_all_cells_in_empty_file():
     # compare
     assert exp_output == real_output
 
+# M16.tc1: creating test case for transform_row_to_col, passing a string as the myrowdata
+def test_passing_string_as_row_data():
+    # setup
+    input_param_myrowdata = "hello world"
+    exp_output = None
+    # call
+    real_output = transform_row_to_col(input_param_myrowdata)
+    # compare
+    assert exp_output == real_output
+
+# M16.tc2:  creating test case for transform_row_to_col, passing just a list as myrowdata
+def test_passing_just_a_list_as_row_data():
+    # setup
+    input_param_myrowdata = ["fk1",4,7,9,0]
+    exp_output = None
+    # call
+    real_output = transform_row_to_col(input_param_myrowdata)
+    # compare
+    assert exp_output == real_output
+
+#M16.tc3: creating test case for passing list of list
+def test_passing_a_list_of_list():
+    # setup
+    input_param_myrowdata = [['cell#','mv','peak','col4'],
+            ['fk1',1,2,8],
+            ['fk2',2,25,7],
+            ['fk3',43,-45,8],
+            ['fk4',33,-4,8]]
+    exp_output = {'cell#': ['fk1', 'fk2', 'fk3', 'fk4'],
+ 'col4': [8, 7, 8, 8],
+ 'mv': [1, 2, 43, 33],
+ 'peak': [2, 25, -45, -4]}
+    # call
+    real_output = transform_row_to_col(input_param_myrowdata)
+    # compare
+    assert exp_output == real_output
