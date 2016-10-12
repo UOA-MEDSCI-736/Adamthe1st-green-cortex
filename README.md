@@ -7,7 +7,7 @@ Hello world! welcome to my humble repository. Using python, my project implement
 **FOLDERS:**
 
 - *project_raw_data:*
-   contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. 
+   contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. This raw data file was provided by Dr Fabiana Kubke (email:f.kubke@auckland.ac.nz) and is licensed under (CC0). 
 
 - *results:*
   contains the results of the test cases made along the development of the project. The result files are in ".txt"           format.
@@ -20,7 +20,7 @@ Hello world! welcome to my humble repository. Using python, my project implement
 
 **BUILD REQUIREMENTS:**
 
-- Algoreithm: Machine learning - Multi-class classification
+- Algorithm: Machine learning - Multi-class classification
 - Programming language: python 3.5.2 | Anaconda 4.1.1 (64-bit).
 - Format of original data files: .xlsx
 - 3rd party/open source libraries: openpyxl
