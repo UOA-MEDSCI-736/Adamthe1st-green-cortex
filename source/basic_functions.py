@@ -21,9 +21,12 @@ def read_file(file_name,cell_range):
     elif len(cell_range) == 0:
         return None  
     else:
-        wb = openpyxl.load_workbook(file_name)    
+        # wb is a variable which uses openpyxl library
+        # to run the function load_workbook(file_name)
+        wb = openpyxl.load_workbook(file_name)
+        # sheet is a variable which brings the active sheet from wb.    
         sheet=wb.active
-        # declaring a empty list to hold the cells
+        # declaring an empty list to hold the cells
         data = []
 
         # extract cells from sheet
@@ -78,3 +81,25 @@ def transform_row_to_col(myrowdata):
         
     else: #this is checking the outer list if type(myrowdata) is list
         return None
+
+#creating a function to extract data set from row data
+#depending on row_filter_list and col_filter_list
+#refer to test_read_data.py (M23) for test case of this function
+def extract_ds_from_row_data(myrowdata,row_filter_list,col_filter_list):
+    #variable to hold extracted data
+    myetd = []
+    # creating a loop to navigate rows as per the filterd list
+    for row_index in row_filter_list:
+        #variable to hold extracted rows 
+        myerow = []
+        #variable to hold current row from given data set 
+        mycurrentrow = myrowdata[row_index]
+        #creating a loop to navigate column as per filtered list
+        for col_index in col_filter_list:
+            #extracting values from current row column wise
+            myerow.append(mycurrentrow[col_index])
+
+        #appending extracted row into output dataset
+        myetd.append(myerow)
+    #return output
+    return myetd
