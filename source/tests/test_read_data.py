@@ -103,14 +103,51 @@ def test_passing_a_list_of_list():
     # compare
     assert exp_output == real_output
 
-# M23:creating test case which passes a sting as a prameter instead of list
-def test_passin_string_instead_of_list():
+# M23:creating test case for the funciton (extract_ds_from_row_data).
+def test_extract_ds_from_row_data():
     # setup
-    input_param_myrowdata = [1,2,8,50]
-    input_param_row_filter_list = [1,2,34]
-    input_param_col_filter_list = [5,6,7]
+    myrowdata = [['cell#', 'mv', 'peak', 'col4'],
+    ['fk1', 1, 2, 8],
+    ['fk2', 2, 25, 7],
+    ['fk3', 43, -45, 8],
+    ['fk4', 33, -4, 8]]
+
+    input_param_myrowdata = [['cell#', 'mv', 'peak', 'col4'],
+    ['fk1', 1, 2, 8],
+    ['fk2', 2, 25, 7],
+    ['fk3', 43, -45, 8],
+    ['fk4', 33, -4, 8]]
+
+    input_param_row_filter_list = range(1,len(myrowdata))
+    input_param_col_filter_list = [1,2,3]
+    exp_output = [[1, 2, 8], [2, 25, 7], [43, -45, 8], [33, -4, 8]]
+
+    # calling the function
+    real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
+    # compare
+    assert exp_output == real_output
+
+
+
+
+
+# M24:creating test case for the funciton (extract_ds_from_row_data)
+# which passes a sting as a prameter instead of list
+def test_passing_string_instead_of_list():
+    # setup
+    myrowdata = [['cell#', 'mv', 'peak', 'col4'],
+    ['fk1', 1, 2, 8],
+    ['fk2', 2, 25, 7],
+    ['fk3', 43, -45, 8],
+    ['fk4', 33, -4, 8]]
+    # inserting a string instead of list: 
+    input_param_myrowdata = "hello_world"
+    input_param_row_filter_list = range(1,len(myrowdata))
+    input_param_col_filter_list = "[1,2,3]"
+    # expected output is none since input_param_myrowdata must be a list 
     exp_output = None
     # calling the function
     real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
     # compare
     assert exp_output == real_output
+    
