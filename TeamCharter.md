@@ -3,10 +3,10 @@
 #Vision
 To obtain data management siklls and to become highly qualified digital researcher.
 #Mission
-To complete a software-based project (Machine learning) using Python 3.5 and shell programing with the support of a supervisor, teaching staff and students of Medsci-736.  
+Using python 3.5.2, my mission is to to create a software-based project (Machine learning), which utilizes the multi-class-classification algorithm in order to identifiy cell type based on different cell characteristics.
 #Success Criteria
 - To pass the course
-- To gain some digital research/data management skills (ie. become confident at using Python and shell programing in areas   that are relevant to Medsci-736 as well as broader areas for fun).
+- To gain some digital research/data management skills (ie. become familiar at using Python and be able to implement basic-to-more-advanced programming algorithms.
 - To develop a project that works (does what it suppose to do).
 
 #Behavioral Agreement
