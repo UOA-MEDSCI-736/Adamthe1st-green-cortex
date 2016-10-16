@@ -4,6 +4,7 @@
 * All the code in this repository is under MIT license, as described by [The Open Source Initiative website](https://opensource.org/licenses/MIT) 
 
 **The MIT License (MIT)**
+
 Copyright (c) 2016 Ahmed Adam
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
