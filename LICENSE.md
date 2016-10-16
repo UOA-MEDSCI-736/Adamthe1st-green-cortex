@@ -1,7 +1,7 @@
 =================
 ##LICENSE##
 =================
-**All code in this repository is under MIT license, as described by [The Open Source Initiative](https://opensource.org/licenses/MIT)
+*All code in this repository is under MIT license, as described by [The Open Source Initiative website](https://opensource.org/licenses/MIT) 
 
 **The MIT License (MIT)**
 Copyright (c) 2016 Ahmed Adam
