@@ -7,7 +7,7 @@ Hello world! welcome to my humble repository. Using python, my project implement
 **FOLDERS:**
 
 - *project_raw_data:*
-   contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. This raw data file was provided by Dr Fabiana Kubke (email:f.kubke@auckland.ac.nz) and is licensed under (CC0). 
+   contains "ram.xlsx" spreadsheet which holds the raw data in a column-row representation. 
 
 - *results:*
   contains the results of the test cases made along the development of the project. The result files are in ".txt"           format.
