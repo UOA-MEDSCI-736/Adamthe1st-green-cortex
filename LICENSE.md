@@ -23,4 +23,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 and are licensed under [Creative Commons license Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/). 
 * All other files are licensed under the [Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). 
 
-[Github repository](https://github.com/UOA-MEDSCI-736/Adamthe1st-green-cortex)
+[Dr Jerome Plumat](https://unidirectory.auckland.ac.nz/profile/j-plumat)
