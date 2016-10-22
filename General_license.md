@@ -5,8 +5,4 @@
 
 * All the content within the the Project_raw_data folder were provided by [Dr Fabiana Kubke](https://unidirectory.auckland.ac.nz/profile/f-kubke) and are licensed under [Creative Commons license Zero (CC0)](https://creativecommons.org/publicdomain/zero/1.0/). 
 
-* All other files are licensed under the [Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). 
-
-
-  
-The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT).[1] As a permissive license, it puts only very limited restriction on reuse and has therefore an excellent license compatibility.[2][3] The MIT license permits reuse within proprietary software provided that all copies of the licensed software include a copy of the MIT License terms and the copyright notice
+* All other files are licensed under the [Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
