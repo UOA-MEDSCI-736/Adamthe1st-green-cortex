@@ -17,13 +17,13 @@ import numpy as np
 # stringIO reads and writes strings as files???
 from sklearn.externals.six import StringIO
 # pydot creates, modifies and process graphs dot language.
-import pydot
+#import pydot
 
 ## ===================
 ## 0- Loading the data
 ## ===================
 # calling function to read all cells from data file 
-ramdt = read_file("ram.xlsx","all")
+ramdt = read_file("../project_raw_data/ram.xlsx","all")
 
 # calling function to transform row to col
 rdtcol = transform_row_to_col(ramdt)
@@ -39,13 +39,15 @@ train_tgt = rdtcol['Type']
 # range of columns based on index zero of ramdt (headeres)
 # (ie. exclude columns[0,1] and include rest of columns.  
 train_ds = extract_ds_from_row_data(ramdt,
-range(1,len(ramdt)),
-range(2,len(ramdt[0]))
+list(range(1,5)) + list(range(10,15)),   
+ range(2,len(ramdt[0])))
+
+print(train_ds)
 
 ## ===========
 ## 2- Learning
 ## ===========
-clf = tree.DecisionTreeClassifier();
-clf.fit(train_ds,train_tgt);
+#clf = tree.DecisionTreeClassifier();
+#clf.fit(train_ds,train_tgt);
 
 

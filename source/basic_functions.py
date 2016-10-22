@@ -90,8 +90,9 @@ def extract_ds_from_row_data(myrowdata,row_filter_list,col_filter_list):
         
     # if type(myrowdata,row_filter_list,col_filter_list) are lists, then return myetd
     if type(myrowdata) is list:       
-        if type(col_filter_list) is list:
-        ### if type(row_filter_list) is list:   ---> this if statement returns an error. why?                 
+        if (type(col_filter_list) is list or type(col_filter_list) is range)\
+          and (type(row_filter_list) is list or type(row_filter_list) is range):   
+            # \ tells code is contiuned on next line              
             # myetd is a variable to hold extracted data
             myetd = []
             # creating an outer loop to navigate rows as per the filterd list
@@ -109,5 +110,7 @@ def extract_ds_from_row_data(myrowdata,row_filter_list,col_filter_list):
                 myetd.append(myerow)
             # return output
             return myetd
+        else:
+            return None
     else:
         return None
