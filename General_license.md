@@ -10,4 +10,4 @@
 
 
 
-[Amit Kulkarni](http://www.worldofagile.com/about-me/)
+[GPLv2](https://wordpress.org/about/gpl/)
