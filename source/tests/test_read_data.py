@@ -103,51 +103,75 @@ def test_passing_a_list_of_list():
     # compare
     assert exp_output == real_output
 
-# M23:creating test case for the funciton (extract_ds_from_row_data).
+# M23:creating test case for the funciton (extract_ds_from_row_data). i.e success scenario.
 def test_extract_ds_from_row_data():
     # setup
-    myrowdata = [['cell#', 'mv', 'peak', 'col4'],
-    ['fk1', 1, 2, 8],
-    ['fk2', 2, 25, 7],
-    ['fk3', 43, -45, 8],
-    ['fk4', 33, -4, 8]]
-
     input_param_myrowdata = [['cell#', 'mv', 'peak', 'col4'],
     ['fk1', 1, 2, 8],
     ['fk2', 2, 25, 7],
     ['fk3', 43, -45, 8],
     ['fk4', 33, -4, 8]]
-
-    input_param_row_filter_list = range(1,len(myrowdata))
+    input_param_row_filter_list = range(1,len(input_param_myrowdata))
     input_param_col_filter_list = [1,2,3]
     exp_output = [[1, 2, 8], [2, 25, 7], [43, -45, 8], [33, -4, 8]]
-
     # calling the function
     real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
     # compare
     assert exp_output == real_output
 
 
-
-
-
 # M24:creating test case for the funciton (extract_ds_from_row_data)
 # which passes a sting as a prameter instead of list
-def test_passing_string_instead_of_list():
+def test_passing_myrowdata_as_string_instead_of_list():
     # setup
-    myrowdata = [['cell#', 'mv', 'peak', 'col4'],
-    ['fk1', 1, 2, 8],
-    ['fk2', 2, 25, 7],
-    ['fk3', 43, -45, 8],
-    ['fk4', 33, -4, 8]]
     # inserting a string instead of list: 
-    input_param_myrowdata = "hello_world"
-    input_param_row_filter_list = range(1,len(myrowdata))
-    input_param_col_filter_list = "[1,2,3]"
+    input_param_myrowdata = "hello_world"   # failure scenario_1
+    input_param_row_filter_list = range(1,len(input_param_myrowdata))
+    input_param_col_filter_list = [1,2,3]
     # expected output is none since input_param_myrowdata must be a list 
     exp_output = None
     # calling the function
     real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
     # compare
     assert exp_output == real_output
+    
+
+# M25:creating test case for the funciton (extract_ds_from_row_data)
+# which passes a sting as a prameter instead of list
+def test_passing_row_filter_list_as_string_instead_of_list():
+    # setup
+    # inserting a string instead of list: 
+    input_param_myrowdata = [['cell#', 'mv', 'peak', 'col4'],
+    ['fk1', 1, 2, 8],
+    ['fk2', 2, 25, 7],
+    ['fk3', 43, -45, 8],
+    ['fk4', 33, -4, 8]]
+    input_param_row_filter_list = "range(1,len(input_param_myrowdata))" # failure scenario_2
+    input_param_col_filter_list = [1,2,3]
+    # expected output is none since input_param_myrowdata must be a list 
+    exp_output = None
+    # calling the function
+    real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
+    # compare
+    assert exp_output == real_output
+
+    # M26:creating test case for the funciton (extract_ds_from_row_data)
+    # which passes a sting as a prameter instead of list
+def test_passing_col_filter_list_as_string_instead_of_list():
+    # setup
+    # inserting a string instead of list: 
+    input_param_myrowdata = [['cell#', 'mv', 'peak', 'col4'],
+    ['fk1', 1, 2, 8],
+    ['fk2', 2, 25, 7],
+    ['fk3', 43, -45, 8],
+    ['fk4', 33, -4, 8]]
+    input_param_row_filter_list = range(1,len(input_param_myrowdata))
+    input_param_col_filter_list = "[1,2,3]" # failure scenario_3
+    # expected output is none since input_param_myrowdata must be a list 
+    exp_output = None
+    # calling the function
+    real_output = extract_ds_from_row_data(input_param_myrowdata,input_param_row_filter_list,input_param_col_filter_list)
+    # compare
+    assert exp_output == real_output
+
     
